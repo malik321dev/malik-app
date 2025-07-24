@@ -1,0 +1,6 @@
+{
+  "name": "Imagen Bulk Image Generator",
+  "description": "An application to generate multiple images in bulk from a single text prompt using Google's Imagen 3 model.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
