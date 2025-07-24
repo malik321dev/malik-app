@@ -23,7 +23,7 @@ jobs:
         run: npx electron-builder --windows
 
       - name: Upload EXE Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: malik-app-windows
           path: dist/*.exe
