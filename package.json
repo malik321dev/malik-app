@@ -1,21 +1,25 @@
 {
-  "name": "imagen-bulk-image-generator",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "malik-app",
+  "version": "1.0.0",
+  "description": "Malik Desktop App",
+  "main": "main.js",
+  "author": "Malik Dev",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "@google/genai": "^1.11.0"
+    "start": "electron .",
+    "build": "electron-builder"
   },
   "devDependencies": {
-    "@types/node": "^22.14.0",
-    "typescript": "~5.7.2",
-    "vite": "^6.2.0"
+    "electron": "^28.2.3",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.malik.app",
+    "productName": "Malik App",
+    "win": {
+      "target": "nsis"
+    },
+    "directories": {
+      "output": "dist"
+    }
   }
 }
