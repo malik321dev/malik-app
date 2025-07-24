@@ -1,0 +1,29 @@
+name: Build Malik Electron App for Windows
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Windows App
+        run: npx electron-builder --windows
+
+      - name: Upload EXE Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: malik-app-windows
+          path: dist/*.exe
