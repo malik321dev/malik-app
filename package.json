@@ -2,8 +2,8 @@
   "name": "malik-app",
   "version": "1.0.0",
   "description": "Malik Desktop App",
+  "author": "Malik321dev",
   "main": "main.js",
-  "author": "Malik Dev",
   "scripts": {
     "start": "electron .",
     "build": "electron-builder"
